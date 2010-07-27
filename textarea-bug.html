@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <!-- <meta name="viewport" content="width=device-width; user-scalable=no" /> -->
+    <style>
+      #container {
+        width: 320px;
+        left: -10px;
+        -webkit-transform: translate(320px, 0px);
+      }
+      textarea {
+        height: 100px;
+        width: 300px;
+        -webkit-user-select: text;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <textarea>There is a bug on iOS4. If there's a webkit transform on the containing div, the user text selection is borked.
+        Try focusing this textarea, and then moving the cursor.</textarea>
+    </div>
+  </body>
+</html>
