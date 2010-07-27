@@ -4,7 +4,7 @@
     <style>
       #container {
         width: 320px;
-        left: -10px;
+        left: -320px;
         -webkit-transform: translate(320px, 0px);
       }
       textarea {
@@ -16,8 +16,10 @@
   </head>
   <body>
     <div id="container">
-      <textarea>There is a bug on iOS4. If there's a webkit transform on the containing div, the user text selection is borked.
-        Try focusing this textarea, and then moving the cursor.</textarea>
+      <textarea>There is a bug on iOS4 and 3.2. If there's a webkit transform on the containing div, the user text selection is borked.
+        Try focusing this textarea, and then moving the cursor.
+        The scale of the transform seems to make a difference.
+        Works on iPhone 3.1.3.</textarea>
     </div>
   </body>
 </html>
